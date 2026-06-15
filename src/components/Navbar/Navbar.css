@@ -33,6 +33,19 @@
   font-weight: 800;
   color: var(--primary-color);
   letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  transition: transform var(--transition-fast) ease-in-out;
+}
+
+.navbar-logo:hover .logo-icon {
+  transform: rotate(-10deg) scale(1.1);
 }
 
 .navbar-logo span {

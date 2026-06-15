@@ -17,6 +17,13 @@ export default function Footer() {
       <div className="container footer-top">
         <div className="footer-brand">
           <Link to="/" className="footer-logo">
+            <svg className="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 30L50 85L80 30" stroke="var(--secondary-color)" strokeWidth="8" strokeLinecap="round" strokeLinejoin="round" />
+              <path d="M35 25L50 65L65 25" stroke="var(--primary-color)" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" opacity="0.8" />
+              <circle cx="50" cy="42" r="18" fill="#ccff00" />
+              <path d="M39 37Q50 45 61 37" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" fill="none" />
+              <path d="M39 47Q50 39 61 47" stroke="#ffffff" stroke-width="2" strokeLinecap="round" fill="none" />
+            </svg>
             Vantage<span>Court</span>
           </Link>
           <p className="footer-tagline">

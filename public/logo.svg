@@ -1,10 +1,7 @@
 <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Stylized tennis court V-lines -->
   <path d="M20 30L50 85L80 30" stroke="#00abff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
   <path d="M35 25L50 65L65 25" stroke="#0b2239" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" opacity="0.8" />
-  <!-- Glowing tennis ball at the center -->
   <circle cx="50" cy="42" r="18" fill="#ccff00" />
-  <!-- Tennis ball seams -->
   <path d="M39 37Q50 45 61 37" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" />
   <path d="M39 47Q50 39 61 47" stroke="#ffffff" stroke-width="2" stroke-linecap="round" fill="none" />
 </svg>
