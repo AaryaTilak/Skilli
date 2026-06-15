@@ -12,7 +12,7 @@ export default function Courts() {
     },
     {
       title: "Private & Group Lessons",
-      image: "/hero_tennis.png"
+      image: "/coaches_handshake.png"
     },
     {
       title: "Premium Indoor & Outdoor Courts",

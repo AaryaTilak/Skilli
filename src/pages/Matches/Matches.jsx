@@ -4,6 +4,7 @@ import Accordion from '../../components/Accordion/Accordion';
 import Testimonials from '../../components/Testimonials/Testimonials';
 import { ArrowUpRight, Award, ShieldAlert, Compass, Target } from 'lucide-react';
 import './Matches.css';
+import '../Home/Home.css';
 
 export default function Matches() {
   const matchSchedule = [
@@ -97,13 +98,13 @@ export default function Matches() {
 
           {/* Card Right: Progress metrics */}
           <div className="stat-card-right">
-            <span className="tag-badge">Player Training Metrics</span>
-            <h2>Decoding Tactical Complexity</h2>
+            <span className="tag-badge">Our Impact</span>
+            <h2>Decoding Match Complexity</h2>
             
             <div className="progress-bars-container">
               <div className="progress-bar-item">
                 <div className="progress-label">
-                  <span>Basic Volley Development</span>
+                  <span>Forehand Development</span>
                   <span>90%</span>
                 </div>
                 <div className="progress-track">
@@ -113,7 +114,7 @@ export default function Matches() {
 
               <div className="progress-bar-item">
                 <div className="progress-label">
-                  <span>Court Smart Contract (Tactical positioning)</span>
+                  <span>Smart Court Development</span>
                   <span>95%</span>
                 </div>
                 <div className="progress-track">
@@ -123,7 +124,7 @@ export default function Matches() {
 
               <div className="progress-bar-item">
                 <div className="progress-label">
-                  <span>Match Security & Strategy Auditing</span>
+                  <span>Match Security & Strategy</span>
                   <span>88%</span>
                 </div>
                 <div className="progress-track">
@@ -154,6 +155,28 @@ export default function Matches() {
       </section>
 
       <Testimonials />
+
+      {/* Clay Court Updates Banner */}
+      <section className="cta-banner-section" style={{ backgroundImage: `url('/clay_tennis.png')` }}>
+        <div className="cta-banner-overlay"></div>
+        <div className="container cta-banner-container animate-fade-in-up">
+          <div className="cta-banner-content">
+            <span className="tag-badge-light">Newsletter</span>
+            <h2>Get The Latest Updates, Special Offers and Exclusive Event Invitations</h2>
+            <form className="cta-banner-form" onSubmit={(e) => { e.preventDefault(); alert("Subscribed!"); }}>
+              <input 
+                type="email" 
+                placeholder="Enter your email address" 
+                required
+                className="cta-banner-input"
+              />
+              <button type="submit" className="btn-accent">
+                Subscribe <ArrowUpRight size={18} />
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

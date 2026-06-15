@@ -40,6 +40,9 @@ export default function Navbar() {
           <NavLink to="/matches" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Match Strategy
           </NavLink>
+          <NavLink to="/pricing" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
+            Pricing
+          </NavLink>
           <NavLink to="/contact" className={({ isActive }) => `nav-link ${isActive ? 'active' : ''}`}>
             Contact
           </NavLink>
@@ -71,6 +74,9 @@ export default function Navbar() {
           </NavLink>
           <NavLink to="/matches" className={({ isActive }) => `mobile-link ${isActive ? 'active' : ''}`} onClick={() => setIsOpen(false)}>
             Match Strategy
+          </NavLink>
+          <NavLink to="/pricing" className={({ isActive }) => `mobile-link ${isActive ? 'active' : ''}`} onClick={() => setIsOpen(false)}>
+            Pricing
           </NavLink>
           <NavLink to="/contact" className={({ isActive }) => `mobile-link ${isActive ? 'active' : ''}`} onClick={() => setIsOpen(false)}>
             Contact

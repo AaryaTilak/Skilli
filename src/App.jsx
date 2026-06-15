@@ -7,6 +7,7 @@ import About from './pages/About/About';
 import Courts from './pages/Courts/Courts';
 import Matches from './pages/Matches/Matches';
 import Contact from './pages/Contact/Contact';
+import Pricing from './pages/Pricing/Pricing';
 
 // Scroll to top helper on route change
 function ScrollToTop() {
@@ -32,6 +33,7 @@ export default function App() {
             <Route path="/courts" element={<Courts />} />
             <Route path="/matches" element={<Matches />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/pricing" element={<Pricing />} />
           </Routes>
         </main>
         <Footer />
