@@ -1,0 +1,625 @@
+/* Hero Section */
+.hero-section {
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 105px; /* Navbar height + spacing */
+  padding-bottom: 20px;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-card {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  border-radius: 36px;
+  background-size: cover;
+  background-position: center 25%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 24px;
+  box-shadow: 0 15px 40px rgba(11, 34, 57, 0.1);
+  border: 1px solid rgba(15, 23, 42, 0.03);
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(11, 34, 57, 0.8) 0%, rgba(11, 34, 57, 0.3) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 720px;
+  margin-top: -20px;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.15;
+  font-weight: 800;
+}
+
+.hero-title .highlight-lime {
+  color: var(--accent-color);
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 32px;
+  line-height: 1.6;
+  max-width: 580px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-actions {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-btn-join {
+  background-color: #ffffff;
+  color: #0f172a;
+  font-family: var(--font-headings);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 8px 8px 8px 24px;
+  border-radius: var(--border-radius-round);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: all var(--transition-fast);
+}
+
+.hero-btn-join:hover {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(204, 255, 0, 0.35);
+}
+
+.arrow-circle {
+  background-color: #0f172a;
+  color: #ffffff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-fast);
+}
+
+.hero-btn-join:hover .arrow-circle {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* Floating social strip inside Hero Card */
+.hero-social-strip {
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.hero-social-strip p {
+  font-family: var(--font-headings);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 600;
+}
+
+.social-strip-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-strip-links a {
+  color: #ffffff;
+  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
+}
+
+.social-strip-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Happy Members Overlay Badge inside Hero Card */
+.hero-badge-card {
+  position: absolute;
+  bottom: 30px;
+  right: 40px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border-radius: var(--border-radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+}
+
+.avatar-group {
+  display: flex;
+}
+
+.avatar-group img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1.5px solid var(--primary-color);
+  margin-left: -8px;
+  object-fit: cover;
+}
+
+.avatar-group img:first-child {
+  margin-left: 0;
+}
+
+.hero-badge-card .badge-text {
+  font-family: var(--font-headings);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  
+  .hero-card {
+    height: 480px;
+    padding: 30px 16px;
+    border-radius: 24px;
+  }
+  
+  .hero-social-strip, .hero-badge-card {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 20px;
+  }
+  
+  .hero-social-strip {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .hero-badge-card {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/* Home Intro Snippet */
+.home-intro-section {
+  padding: 80px 0 50px 0;
+  background-color: #ffffff;
+}
+
+.home-intro-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  .home-intro-layout {
+    grid-template-columns: 1fr 2.5fr;
+    gap: 40px;
+  }
+}
+
+.intro-text p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+/* Features Grid */
+.features-grid-section {
+  padding: 50px 0 100px 0;
+  background-color: #ffffff;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-grid {
+    grid-template-columns: 1.2fr 1fr;
+  }
+}
+
+.feature-card {
+  background-color: #f8fafc;
+  border-radius: var(--border-radius-lg);
+  padding: 40px;
+  border: 1px solid rgba(15, 23, 42, 0.03);
+  box-shadow: var(--card-shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: all var(--transition-slow);
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+.feature-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Card 1 Large: Game Mode Toggle */
+.card-large {
+  grid-column: 1 / -1;
+  background-color: #0b2239;
+  color: #ffffff;
+}
+
+.card-large h3 {
+  color: #ffffff;
+}
+
+.card-large p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.card-top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-icon {
+  font-size: 2rem;
+}
+
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.toggle-label {
+  font-family: var(--font-headings);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.court-visualizer {
+  height: 240px;
+  background: linear-gradient(135deg, #1b263b 0%, #0d1b2a 100%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--border-radius-md);
+  position: relative;
+  overflow: hidden;
+  margin-top: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-slow);
+  
+  /* Day Mode CSS variables for the SVG */
+  --outer-court-start: #38a169;
+  --outer-court-end: #22543d;
+  --inner-court-start: #3182ce;
+  --inner-court-end: #2a4365;
+  --court-edge-color: rgba(255, 255, 255, 0.15);
+  --court-line-color: rgba(255, 255, 255, 0.95);
+  --court-line-glow-filter: none;
+  --net-post-color: #ffffff;
+  --net-mesh-color: rgba(255, 255, 255, 0.15);
+  --net-mesh-border: rgba(255, 255, 255, 0.3);
+  --net-strap-color: #ffffff;
+  --ball-color: #ccff00;
+  --ball-glow-filter: none;
+  --ball-shadow-opacity: 0.35;
+  --spotlight-opacity: 0;
+}
+
+/* Pulsing neon effect for the lines and ball in night mode */
+@keyframes neon-pulse {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 4px rgba(0, 210, 255, 0.6));
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+
+/* Game Mode Toggle Card States */
+.game-mode-active {
+  background-color: #030712;
+  box-shadow: 0 20px 50px rgba(0, 171, 255, 0.25);
+  border-color: rgba(0, 171, 255, 0.3);
+}
+
+.game-mode-active h3 {
+  color: var(--accent-color);
+}
+
+.game-mode-active .court-visualizer {
+  background: linear-gradient(135deg, #020617 0%, #0c152b 100%);
+  border-color: rgba(0, 171, 255, 0.35);
+  box-shadow: inset 0 0 30px rgba(0, 171, 255, 0.2);
+  
+  /* Night Mode Neon CSS variables for the SVG */
+  --outer-court-start: #0f172a;
+  --outer-court-end: #020617;
+  --inner-court-start: #1e1b4b;
+  --inner-court-end: #0f172a;
+  --court-edge-color: rgba(0, 210, 255, 0.4);
+  --court-line-color: #00d2ff;
+  --court-line-glow-filter: url(#neon-glow);
+  --net-post-color: #00d2ff;
+  --net-mesh-color: rgba(0, 210, 255, 0.08);
+  --net-mesh-border: rgba(0, 210, 255, 0.25);
+  --net-strap-color: #00d2ff;
+  --ball-color: #39ff14;
+  --ball-glow-filter: url(#neon-glow);
+  --ball-shadow-opacity: 0.15;
+  --spotlight-opacity: 0.25;
+}
+
+.game-mode-active .court-lines {
+  animation: neon-pulse 2s infinite ease-in-out;
+}
+
+/* Card 2: Image background lessons card */
+.lesson-card {
+  position: relative;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  min-height: 380px;
+  color: #ffffff;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.card-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(11, 34, 57, 0.95) 0%, rgba(11, 34, 57, 0.2) 100%);
+  border-radius: var(--border-radius-lg);
+  z-index: 1;
+}
+
+.card-image-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.card-image-content h3 {
+  color: #ffffff;
+}
+
+.card-image-content p {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card-cta-btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+}
+
+/* Card 3: Coaches stats styling */
+.level-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.level-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.level-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.level-info span:first-child {
+  color: var(--primary-color);
+}
+
+.level-info span:last-child {
+  color: var(--text-muted);
+}
+
+.dots-indicator {
+  display: flex;
+  gap: 4px;
+}
+
+.dot {
+  flex: 1;
+  height: 8px;
+  background-color: #cbd5e1;
+  border-radius: 4px;
+  transition: background-color var(--transition-normal);
+}
+
+.dot.active {
+  background-color: var(--secondary-color);
+}
+
+/* Card 4: Vision & Passion styling */
+.vision-card {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+.vision-card h3 {
+  color: #ffffff;
+}
+
+.vision-card p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (min-width: 768px) {
+  .vision-card {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .vision-card {
+    grid-column: auto;
+  }
+}
+
+/* Clay Court CTA banner styling */
+.cta-banner-section {
+  position: relative;
+  padding: 120px 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.cta-banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(230, 92, 0, 0.95) 0%, rgba(11, 34, 57, 0.85) 100%);
+  z-index: 1;
+}
+
+.cta-banner-container {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-banner-content {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.cta-banner-content h2 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.cta-banner-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  max-width: 550px;
+  margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+  .cta-banner-form {
+    flex-direction: row;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 6px;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}
+
+.cta-banner-input {
+  flex: 1;
+  padding: 16px 24px;
+  border-radius: 30px;
+  border: none;
+  background: #ffffff;
+  outline: none;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+@media (min-width: 600px) {
+  .cta-banner-input {
+    background: transparent;
+    color: #ffffff;
+  }
+  
+  .cta-banner-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.cta-banner-form button {
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 0.95rem;
+}
