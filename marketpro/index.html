@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkilliMart - E-commerce React Template</title>
+    <meta name="description" content="SkilliMart - Premium E-commerce Multi-vendor Template built with React">
+    <link rel="shortcut icon" href="/favicon.png">
+
+    <!-- Google Fonts - Exo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://marketpro.theme.picode.in/assets/css/bootstrap.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="https://marketpro.theme.picode.in/assets/css/select2.min.css">
+    <!-- Slick -->
+    <link rel="stylesheet" href="https://marketpro.theme.picode.in/assets/css/slick.css">
+    <!-- jQuery UI -->
+    <link rel="stylesheet" href="https://marketpro.theme.picode.in/assets/css/jquery-ui.css">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://marketpro.theme.picode.in/assets/css/animate.css">
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://marketpro.theme.picode.in/assets/css/aos.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="https://marketpro.theme.picode.in/assets/css/main.css">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.0.3"></script>
+
+    <style>
+      /* Override AOS hidden defaults so content is always visible */
+      [data-aos] { opacity: 1 !important; transform: none !important; }
+      .preloader { display: none !important; }
+      body { font-family: 'Exo', sans-serif; }
+
+      /* Fix d-grid utility not in Bootstrap */
+      .d-grid { display: grid !important; }
+
+      /* Fix category dropdown z-index */
+      .category-dropdown { z-index: 999; }
+
+      /* Hover dropdown fix for React (no JS hover) */
+      .on-hover-item:hover .on-hover-dropdown { display: block; }
+      .on-hover-item .on-hover-dropdown { display: none; }
+
+      /* Search form fix */
+      .search-category select { min-width: 160px; }
+
+      /* ── Swiper Overrides (blend with original slick CSS) ── */
+      /* Hide Swiper's default nav buttons - we use custom ones */
+      .swiper-button-next,
+      .swiper-button-prev { display: none !important; }
+      .swiper-pagination { display: none !important; }
+
+      /* Banner slider needs full height */
+      .banner-slider .swiper-slide { height: auto; }
+      .banner-slider .swiper-wrapper { align-items: stretch; }
+
+      /* Disable CORS-blocked mask-images (preventing blank elements) */
+      .banner-item,
+      .vendor-card {
+        -webkit-mask-image: none !important;
+        mask-image: none !important;
+      }
+
+      /* Feature slider items - match original sizing */
+      .feature-item-wrapper .swiper-slide { width: auto; }
+
+      /* Fix product card slider overflow */
+      .product-one-slider .swiper-slide,
+      .hot-deals-slider .swiper-slide,
+      .brand-slider .swiper-slide { height: auto; }
+
+      /* Brand items center */
+      .brand-item { display: flex; align-items: center; justify-content: center; padding: 16px; }
+
+      /* Ensure arrow-center works */
+      .arrow-center { position: relative; }
+      .arrow-center .slick-prev,
+      .arrow-center .slick-next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        width: 48px;
+        height: 48px;
+        cursor: pointer;
+      }
+      .arrow-center .slick-prev { left: -8px; }
+      .arrow-center .slick-next { right: -8px; }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

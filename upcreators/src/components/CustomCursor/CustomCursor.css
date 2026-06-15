@@ -1,0 +1,76 @@
+/* Custom Cursor Styling */
+
+.custom-cursor-dot,
+.custom-cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  transform: translate3d(-50%, -50%, 0);
+  will-change: transform;
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+/* Base states */
+.custom-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: var(--yellow);
+}
+
+.custom-cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1.5px solid rgba(255, 184, 0, 0.5);
+  margin-top: -14px;
+  margin-left: -14px;
+}
+
+/* Hiding state */
+.custom-cursor-dot.hidden,
+.custom-cursor-ring.hidden {
+  opacity: 0;
+}
+
+/* Clicking state */
+.custom-cursor-dot.clicked {
+  transform: translate3d(-50%, -50%, 0) scale(0.6);
+  background-color: var(--yellow-dark);
+}
+
+.custom-cursor-ring.clicked {
+  transform: translate3d(-50%, -50%, 0) scale(1.4);
+  border-color: var(--yellow-dark);
+}
+
+/* Hovering Link state */
+.custom-cursor-dot.hovered-link {
+  width: 4px;
+  height: 4px;
+  background-color: var(--black);
+}
+
+.custom-cursor-ring.hovered-link {
+  width: 50px;
+  height: 50px;
+  margin-top: -21px;
+  margin-left: -21px;
+  border-color: var(--black);
+  background-color: rgba(255, 184, 0, 0.15);
+}
+
+/* Hovering Input/Text state */
+.custom-cursor-dot.hovered-text {
+  width: 2px;
+  height: 16px;
+  border-radius: 0;
+  background-color: var(--black);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.custom-cursor-ring.hovered-text {
+  opacity: 0; /* Hide ring on text input */
+}
+
