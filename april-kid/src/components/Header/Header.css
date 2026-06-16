@@ -47,7 +47,7 @@
 }
 
 .site-logo img {
-  height: 68px;
+  height: 100px;
   width: auto;
   object-fit: contain;
 }
@@ -203,7 +203,7 @@
   .hamburger { display: flex; }
   .header-social { display: none; }
 
-  .site-logo img { height: 52px; }
+  .site-logo img { height: 70px; }
 
   .site-nav {
     max-height: 0;

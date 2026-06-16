@@ -44,7 +44,7 @@ export default function Header() {
 
           {/* Logo center */}
           <Link to="/" className="site-logo">
-            <img src="/images/logo.png?v=2" alt="SkilliKid Store" />
+            <img src="/images/logo.png?v=4" alt="SkilliKid Store" />
           </Link>
 
           {/* Right: search + cart */}
