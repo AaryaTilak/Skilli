@@ -26,7 +26,7 @@ export default function Footer() {
             {/* Links Widget */}
             <div className="col-md-6 col-lg-5 mt-md-0 mt-9">
               <div className="widget-item">
-                <h4 class="widget-title">Information</h4>
+                <h4 className="widget-title">Information</h4>
                 <ul className="widget-nav">
                   <li><Link to="/blog">Blog</Link></li>
                   <li><Link to="/contact">About us</Link></li>
@@ -43,13 +43,16 @@ export default function Footer() {
             {/* Social Widget */}
             <div className="col-md-6 col-lg-3 mt-lg-0 mt-6">
               <div className="widget-item">
-                <h4 class="widget-title">Social Info</h4>
+                <h4 className="widget-title">Social Info</h4>
                 <div className="widget-social">
                   <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-twitter"></i>
                   </a>
                   <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-facebook"></i>
+                  </a>
+                  <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <i className="fa fa-instagram"></i>
                   </a>
                   <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-pinterest-p"></i>

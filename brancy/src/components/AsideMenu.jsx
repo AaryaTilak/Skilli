@@ -59,22 +59,15 @@ export default function AsideMenu() {
         <div className="offcanvas-body" style={{ overflowY: 'auto', flex: 1 }}>
           <div id="offcanvasNav" className="offcanvas-menu-nav">
             <ul>
-              {/* Home dropdown */}
+              {/* Home */}
               <li className="offcanvas-nav-parent">
                 <a 
-                  className="offcanvas-nav-item d-flex justify-content-between align-items-center" 
+                  className="offcanvas-nav-item" 
                   href="#" 
-                  onClick={(e) => { e.preventDefault(); toggleSubmenu('home'); }}
+                  onClick={(e) => { e.preventDefault(); handleLinkClick('/'); }}
                 >
-                  <span>home</span>
-                  <i className={`fa ${activeSubmenu === 'home' ? 'fa-angle-up' : 'fa-angle-down'}`}></i>
+                  Home
                 </a>
-                {activeSubmenu === 'home' && (
-                  <ul className="d-block" style={{ paddingLeft: '15px' }}>
-                    <li><a href="#" onClick={(e) => { e.preventDefault(); handleLinkClick('/'); }}>Home One</a></li>
-                    <li><a href="#" onClick={(e) => { e.preventDefault(); handleLinkClick('/'); }}>Home Two</a></li>
-                  </ul>
-                )}
               </li>
 
               {/* About */}
@@ -84,7 +77,7 @@ export default function AsideMenu() {
                   href="#" 
                   onClick={(e) => { e.preventDefault(); handleLinkClick('/contact'); }}
                 >
-                  about
+                  About
                 </a>
               </li>
 

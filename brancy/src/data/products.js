@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    title: 'Readable content DX22',
+    title: 'Luxury Anti-Ageing Cream',
     collection: 'Premium Collection',
     price: 210.00,
     oldPrice: 300.00,
@@ -53,7 +53,7 @@ export const products = [
   },
   {
     id: 5,
-    title: 'Sprite Yoga Straps1',
+    title: 'Sprite Yoga Strap',
     collection: 'Accessories Collection',
     price: 90.00,
     oldPrice: 120.00,
@@ -79,7 +79,7 @@ export const products = [
   },
   {
     id: 7,
-    title: 'Offbline Age Rewind',
+    title: 'Age Rewind Eye Corrector',
     collection: 'Premium Collection',
     price: 254.22,
     oldPrice: 350.00,
@@ -108,7 +108,7 @@ export const products = [
 export const blogs = [
   {
     id: 1,
-    title: 'Lorem ipsum dolor sit amet consectetur adipiscing.',
+    title: 'Anti-Aging Skincare: Science Behind Youthful Radiance.',
     category: 'beauty',
     bgColor: '#FF9E9E',
     author: 'Tomas De Momen',

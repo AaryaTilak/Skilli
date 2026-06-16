@@ -26,16 +26,12 @@ export default function Navbar() {
           <div className="col-lg-6 d-none d-lg-block">
             <div className="header-navigation">
               <ul className="main-nav justify-content-start">
-                <li className="has-submenu">
-                  <Link to="/">home</Link>
-                  <ul className="submenu-nav">
-                    <li><Link to="/">Home One</Link></li>
-                    <li><Link to="/">Home Two</Link></li>
-                  </ul>
+                <li>
+                  <Link to="/">Home</Link>
                 </li>
-                <li><Link to="/contact">about</Link></li>
+                <li><Link to="/contact">About</Link></li>
                 <li className="has-submenu position-static">
-                  <Link to="/shop">shop</Link>
+                  <Link to="/shop">Shop</Link>
                   <ul className="submenu-nav-mega">
                     <li>
                       <Link to="/shop" className="mega-title">Shop Layout</Link>

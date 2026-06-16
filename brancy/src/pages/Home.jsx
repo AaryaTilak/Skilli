@@ -39,12 +39,16 @@ export default function Home() {
                 <div className="col-12 col-md-6">
                   <div className="hero-two-slide-content">
                     <div className="hero-two-slide-text-img">
-                      <img 
-                        src="https://template.hasthemes.com/brancy/brancy/assets/images/slider/text-light.webp" 
-                        width="427" 
-                        height="232" 
-                        alt="ANTI AGEING" 
-                      />
+                        <span style={{
+                          fontFamily: "'Playfair Display', serif",
+                          fontWeight: 700,
+                          fontSize: '13px',
+                          letterSpacing: '0.3em',
+                          textTransform: 'uppercase',
+                          color: '#bbb',
+                          display: 'block',
+                          marginBottom: '8px'
+                        }}>Premium Skincare</span>
                     </div>
                     <h2 className="hero-two-slide-title">ANTI AGEING</h2>
                     <p className="hero-two-slide-desc">
@@ -87,12 +91,16 @@ export default function Home() {
                 <div className="col-12 col-md-6">
                   <div className="hero-two-slide-content">
                     <div className="hero-two-slide-text-img">
-                      <img 
-                        src="https://template.hasthemes.com/brancy/brancy/assets/images/slider/text-light.webp" 
-                        width="427" 
-                        height="232" 
-                        alt="CLEAN FRESH" 
-                      />
+                        <span style={{
+                          fontFamily: "'Playfair Display', serif",
+                          fontWeight: 700,
+                          fontSize: '13px',
+                          letterSpacing: '0.3em',
+                          textTransform: 'uppercase',
+                          color: '#bbb',
+                          display: 'block',
+                          marginBottom: '8px'
+                        }}>Natural Beauty</span>
                     </div>
                     <h2 className="hero-two-slide-title">CLEAN FRESH</h2>
                     <p className="hero-two-slide-desc">
