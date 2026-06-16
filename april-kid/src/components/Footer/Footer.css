@@ -1,0 +1,140 @@
+/* ── Footer ── */
+.site-footer {
+  background: #f8f8f8;
+  border-top: 1px solid var(--color-border);
+  padding: 60px 0 40px;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 200px repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-col--brand {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-logo img {
+  height: 64px;
+  width: auto;
+  object-fit: contain;
+}
+
+.footer-copyright {
+  font-size: 0.82rem;
+  color: #aaa;
+  line-height: 1.7;
+  margin-top: 8px;
+}
+
+.footer-col__title {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-dark);
+  margin-bottom: 20px;
+  letter-spacing: 0.3px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  font-size: 0.88rem;
+  color: #888;
+  transition: var(--transition);
+}
+
+.footer-links a:hover {
+  color: var(--color-red);
+  padding-left: 4px;
+}
+
+/* Newsletter */
+.footer-newsletter-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--color-dark);
+  margin-bottom: 12px;
+}
+
+.footer-subscribe {
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid #ccc;
+  margin-bottom: 24px;
+  transition: var(--transition);
+}
+
+.footer-subscribe:focus-within {
+  border-color: var(--color-dark);
+}
+
+.footer-subscribe input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 10px 4px 10px 0;
+  font-size: 0.9rem;
+  color: var(--color-dark);
+}
+
+.footer-subscribe input::placeholder { color: #bbb; }
+
+.footer-subscribe button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-gray);
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  transition: var(--transition);
+}
+
+.footer-subscribe button:hover { color: var(--color-red); }
+
+/* Social */
+.footer-social {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-social a {
+  color: #aaa;
+  display: flex;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.footer-social a:hover { color: var(--color-dark); }
+
+/* ── Responsive ── */
+@media (max-width: 992px) {
+  .footer-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-col--brand {
+    grid-column: span 2;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+  }
+  .footer-col--brand {
+    grid-column: span 1;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,203 @@
+/* ═══════════════════════════════════════════
+   SKILLIKID STORE – Global CSS
+   Exact reproduction of https://themes.g5plus.net/april-kid/
+═══════════════════════════════════════════ */
+
+:root {
+  --color-red: #e8453c;
+  --color-dark: #1a1a2e;
+  --color-text: #333;
+  --color-gray: #666;
+  --color-light-gray: #f4f4f7;
+  --color-border: #e5e5e5;
+  --color-beige: #f5ede4;
+  --color-blue-pastel: #ddeef7;
+  --color-pink-pastel: #fce8f0;
+  --color-yellow: #f5c518;
+  --font-script: 'Dancing Script', cursive;
+  --font-body: 'Nunito', sans-serif;
+  --radius: 4px;
+  --transition: 0.25s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+input {
+  font-family: var(--font-body);
+  outline: none;
+}
+
+/* ─── Scrollbar ─── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f1f1f1; }
+::-webkit-scrollbar-thumb { background: #ccc; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-red); }
+
+/* ─── Container ─── */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ─── Section Headings ─── */
+.section-title {
+  font-family: var(--font-script);
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--color-dark);
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+/* ─── Buttons ─── */
+.btn-outline-dark {
+  display: inline-block;
+  padding: 12px 32px;
+  border: 1.5px solid var(--color-dark);
+  background: transparent;
+  color: var(--color-dark);
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.btn-outline-dark:hover {
+  background: var(--color-dark);
+  color: #fff;
+}
+
+.btn-text-underline {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  text-decoration: underline;
+  color: var(--color-dark);
+  letter-spacing: 0.5px;
+  transition: var(--transition);
+}
+
+.btn-text-underline:hover {
+  color: var(--color-red);
+}
+
+/* ─── Badge ─── */
+.badge-sale {
+  display: inline-block;
+  background: var(--color-yellow);
+  color: var(--color-dark);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  text-transform: uppercase;
+}
+
+/* ─── Swiper overrides ─── */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background: var(--color-dark);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--color-dark) !important;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 1.1rem !important;
+  font-weight: 900 !important;
+}
+
+/* ─── Product card hover reveal ─── */
+.product-card:hover .product-card__actions {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ─── Utility ─── */
+.text-red { color: var(--color-red); }
+.text-gray { color: var(--color-gray); }
+.strike { text-decoration: line-through; color: #aaa; }
+
+/* ─── Animations ─── */
+@keyframes floatDot {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.anim-fadeInUp { animation: fadeInUp 0.6s ease both; }
+
+/* ─── Responsive Grid helpers ─── */
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+
+@media (max-width: 992px) {
+  .grid-4 { grid-template-columns: repeat(3, 1fr); }
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .grid-3 { grid-template-columns: repeat(1, 1fr); }
+  .grid-2 { grid-template-columns: repeat(1, 1fr); }
+  .section-title { font-size: 2rem; }
+}
+@media (max-width: 480px) {
+  .grid-4 { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+}
