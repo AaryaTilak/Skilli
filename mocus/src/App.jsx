@@ -232,7 +232,7 @@ export default function App() {
               <p>
                 Create custom groups for trips, roommates, events, or partners. Share a QR code to invite members instantly and start splitting transparently.
               </p>
-              
+
               <ul className="content-checklist" style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <li className="content-check-item">
                   <span className="check-badge-icon" style={{ color: 'var(--color-green)' }}>
@@ -492,8 +492,19 @@ export default function App() {
 
         <div className="footer-divider"></div>
         <div className="footer-bottom">
-          &copy; Copyright 2026, All Rights Reserved by Mthemeus
-        </div>
+          &copy; Copyright 2026, All Rights Reserved by{" "}
+          <a
+            href="https://skilli.in"
+            style={{
+              color: "#171817ff",
+              textDecorationLine: "underline",
+              textDecorationStyle: "wavy",
+              textDecorationColor: "#111312ff",
+              textUnderlineOffset: "3px",
+            }}
+          >
+            skilli.in
+          </a>       </div>
       </footer>
 
       {/* ──────────────────── VIDEO LIGHTBOX MODAL ──────────────────── */}
